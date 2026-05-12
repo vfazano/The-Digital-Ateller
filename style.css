@@ -104,8 +104,10 @@ body {
 .features {
     margin-top: 80px;
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     gap: 20px;
-    height: 100vw;
+    height: 50vw;
 }
 .titulo-feature{
     display: flex;
