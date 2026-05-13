@@ -20,7 +20,8 @@ body{
 }
 
 .container{
-    width:1200px;
+    width:90vw;
+    max-width:90vw;
     margin:auto;
 }
 
@@ -28,8 +29,8 @@ body{
 
 header{
     background:white;
-    padding:25px 0;
-    border-bottom:1px solid #ddd;
+    padding:3vh 0;
+    border-bottom:0.1vh solid #ddd;
 }
 
 .header-content{
@@ -39,32 +40,33 @@ header{
 }
 
 .logo{
-    font-size:32px;
+    font-size:2vw;
     font-weight:bold;
     color:#4a40e0;
 }
 
 .menu{
     display:flex;
-    gap:40px;
+    gap:3vw;
 }
 
 .menu a{
     text-decoration:none;
     color:#333;
     font-weight:bold;
+    font-size:1vw;
 }
 
 /* HERO */
 
 .hero{
-    padding:100px 0;
+    padding:10vh 0;
 }
 
 .hero-content{
     display:flex;
     align-items:center;
-    gap:80px;
+    gap:5vw;
 }
 
 .hero-text{
@@ -72,14 +74,14 @@ header{
 }
 
 .hero-text h1{
-    font-size:72px;
-    margin-bottom:20px;
+    font-size:5vw;
+    margin-bottom:2vh;
 }
 
 .hero-text p{
-    font-size:20px;
+    font-size:1.3vw;
     line-height:1.8;
-    margin-bottom:30px;
+    margin-bottom:3vh;
 }
 
 .hero-image{
@@ -88,14 +90,14 @@ header{
 
 .hero-image img{
     width:100%;
-    border-radius:20px;
+    border-radius:2vw;
 }
 
 .btn{
-    padding:18px 35px;
+    padding:2vh 3vw;
     border:none;
-    border-radius:50px;
-    font-size:16px;
+    border-radius:5vw;
+    font-size:1vw;
     font-weight:bold;
     cursor:pointer;
 }
@@ -108,44 +110,45 @@ header{
 /* PRODUCTS */
 
 .products{
-    padding:100px 0;
+    padding:10vh 0;
 }
 
 .grid{
     display:grid;
     grid-template-columns:repeat(4,1fr);
-    gap:30px;
+    gap:2vw;
 }
 
 .card{
     background:white;
-    border-radius:20px;
+    border-radius:2vw;
     overflow:hidden;
 }
 
 .card img{
     width:100%;
-    height:300px;
+    height:35vh;
     object-fit:cover;
 }
 
 .info{
-    padding:20px;
+    padding:2vh 1.5vw;
+}
+
+.info h3{
+    font-size:1.2vw;
 }
 
 .price{
     color:#4a40e0;
     font-weight:bold;
-    margin-top:10px;
+    margin-top:1vh;
+    font-size:1vw;
 }
 
 /* RESPONSIVO */
 
 @media(max-width:1024px){
-
-    .container{
-        width:90%;
-    }
 
     .hero-content{
         flex-direction:column;
@@ -156,12 +159,36 @@ header{
         width:100%;
     }
 
+    .logo{
+        font-size:4vw;
+    }
+
+    .menu a{
+        font-size:2vw;
+    }
+
     .hero-text h1{
-        font-size:48px;
+        font-size:8vw;
+    }
+
+    .hero-text p{
+        font-size:2.5vw;
+    }
+
+    .btn{
+        font-size:2vw;
     }
 
     .grid{
         grid-template-columns:repeat(2,1fr);
+    }
+
+    .info h3{
+        font-size:2.5vw;
+    }
+
+    .price{
+        font-size:2vw;
     }
 }
 
@@ -172,15 +199,41 @@ header{
     }
 
     .hero{
-        padding:60px 0;
+        padding:6vh 0;
     }
 
     .hero-text h1{
-        font-size:36px;
+        font-size:10vw;
+    }
+
+    .hero-text p{
+        font-size:4vw;
+    }
+
+    .btn{
+        width:100%;
+        font-size:4vw;
+        padding:2vh 0;
     }
 
     .grid{
         grid-template-columns:1fr;
+    }
+
+    .card img{
+        height:30vh;
+    }
+
+    .info h3{
+        font-size:5vw;
+    }
+
+    .price{
+        font-size:4vw;
+    }
+
+    .logo{
+        font-size:6vw;
     }
 }
 

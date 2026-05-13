@@ -283,6 +283,156 @@ footer p{
         grid-template-columns:repeat(4,1fr);
     }
 }
+.testimonials{
+    width:95vw;
+    background:linear-gradient(135deg,#12003a,#070018);
+    border-radius:3vw;
+    padding:6vh 4vw;
+    position:relative;
+    overflow:hidden;
+}
+
+/* brilho */
+
+.testimonials::before{
+    content:"";
+    position:absolute;
+    right:-10vw;
+    top:-10vh;
+    width:35vw;
+    height:35vw;
+    background:rgba(130,70,255,0.15);
+    filter:blur(8vw);
+    border-radius:50%;
+}
+
+/* TITLE */
+
+.testimonials h2{
+    color:white;
+    font-family:'Plus Jakarta Sans',sans-serif;
+    font-size:2.2vw;
+    font-weight:800;
+    margin-bottom:8vh;
+    position:relative;
+    z-index:2;
+}
+
+/* GRID */
+
+.testimonial-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:6vw;
+    position:relative;
+    z-index:2;
+}
+
+/* CARD */
+
+.testimonial-card{
+    display:flex;
+    flex-direction:column;
+    margin: 10px;
+}
+
+.quote{
+    color:#ff77d9;
+    font-size:4vw;
+    font-weight:800;
+    margin-bottom:2vh;
+    line-height:1;
+}
+
+.testimonial-text{
+    color:white;
+    font-size:1.2vw;
+    font-style:italic;
+    line-height:1.9;
+    max-width:28vw;
+    margin-bottom:4vh;
+}
+
+/* PROFILE */
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:3vw;
+    
+}
+
+.profile img{
+    width:3vw;
+    height:3vw;
+    border-radius:50%;
+    object-fit:cover;
+
+}
+
+.profile-info h4{
+    color:white;
+    font-size:0.9vw;
+    font-weight:700;
+    font-family:'Plus Jakarta Sans',sans-serif;
+}
+
+.profile-info p{
+    color:#9ea0ff;
+    font-size:0.7vw;
+}
+
+/* ========================= */
+/* RESPONSIVO MOBILE */
+/* ========================= */
+
+@media(max-width:768px){
+
+    .testimonials{
+        width:92vw;
+        padding:5vh 6vw;
+        border-radius:6vw;
+    }
+
+    .testimonials h2{
+        font-size:6vw;
+        margin-bottom:5vh;
+    }
+
+    .testimonial-grid{
+        grid-template-columns:1fr;
+        gap:5vh;
+    }
+
+    .quote{
+        font-size:10vw;
+    }
+
+    .testimonial-text{
+        font-size:4vw;
+        max-width:100%;
+        line-height:1.7;
+    }
+
+    .profile{
+        gap:3vw;
+
+    }
+
+    .profile img{
+        width:10vw;
+        height:10vw;
+    }
+
+    .profile-info h4{
+        font-size:3vw;
+    }
+
+    .profile-info p{
+        font-size:2.5vw;
+    }
+
+}
 
 </style>
 </head>
@@ -393,6 +543,62 @@ footer p{
         </div>
 
     </div>
+
+</section>
+<section class="testimonials">
+
+    <h2>Words from the Atelier</h2>
+
+    <div class="testimonial-grid">
+
+        <!-- CARD 1 -->
+
+        <div class="testimonial-card">
+
+            <div class="quote">”</div>
+
+            <p class="testimonial-text">
+                "The attention to detail is bordering on obsessive. My Indigo Series watch isn't just a tool; it's a piece of kinetic art that I wear every single day."
+            </p>
+
+            <div class="profile">
+
+                <img src="https://i.pravatar.cc/100?img=32" alt="Elena">
+
+                <div class="profile-info">
+                    <h4>Elena Vance</h4>
+                    <p>Creative Director, V&A</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- CARD 2 -->
+
+        <div class="testimonial-card">
+
+            <div class="quote">”</div>
+
+            <p class="testimonial-text">
+                "Finding products that balance sustainability with high-end design is rare. The Digital Atelier has mastered this intersection perfectly."
+            </p>
+
+            <div class="profile">
+
+                <img src="https://i.pravatar.cc/100?img=12" alt="Julian">
+
+                <div class="profile-info">
+                    <h4>Julian Thorne</h4>
+                    <p>Principal Architect</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
 <section class="newsletter">
@@ -409,6 +615,7 @@ footer p{
 
     </div>
 </section>
+
 
 <footer>
     <div class="container">
