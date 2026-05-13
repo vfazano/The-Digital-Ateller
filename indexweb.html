@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Desktop Atelier</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial;
+    background:#faf4ff;
+}
+
+.container{
+    width:1200px;
+    margin:auto;
+}
+
+/* HEADER */
+
+header{
+    background:white;
+    padding:25px 0;
+    border-bottom:1px solid #ddd;
+}
+
+.header-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:bold;
+    color:#4a40e0;
+}
+
+.menu{
+    display:flex;
+    gap:40px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#333;
+    font-weight:bold;
+}
+
+/* HERO */
+
+.hero{
+    padding:100px 0;
+}
+
+.hero-content{
+    display:flex;
+    align-items:center;
+    gap:80px;
+}
+
+.hero-text{
+    width:50%;
+}
+
+.hero-text h1{
+    font-size:72px;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.hero-image{
+    width:50%;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:20px;
+}
+
+.btn{
+    padding:18px 35px;
+    border:none;
+    border-radius:50px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.primary{
+    background:#4a40e0;
+    color:white;
+}
+
+/* PRODUCTS */
+
+.products{
+    padding:100px 0;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.info{
+    padding:20px;
+}
+
+.price{
+    color:#4a40e0;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:1024px){
+
+    .container{
+        width:90%;
+    }
+
+    .hero-content{
+        flex-direction:column;
+    }
+
+    .hero-text,
+    .hero-image{
+        width:100%;
+    }
+
+    .hero-text h1{
+        font-size:48px;
+    }
+
+    .grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+
+    .menu{
+        display:none;
+    }
+
+    .hero{
+        padding:60px 0;
+    }
+
+    .hero-text h1{
+        font-size:36px;
+    }
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="container header-content">
+
+        <div class="logo">
+            The Digital Atelier
+        </div>
+
+        <nav class="menu">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Contato</a>
+        </nav>
+
+    </div>
+</header>
+
+<section class="hero">
+
+    <div class="container hero-content">
+
+        <div class="hero-text">
+
+            <h1>Curated Artistry</h1>
+
+            <p>
+                Coleções modernas e exclusivas para pessoas sofisticadas.
+            </p>
+
+            <button class="btn primary">
+                Shop Now
+            </button>
+
+        </div>
+
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200">
+        </div>
+
+    </div>
+
+</section>
+
+<section class="products">
+
+    <div class="container">
+
+        <div class="grid">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?q=80&w=1200">
+                <div class="info">
+                    <h3>Indigo Series</h3>
+                    <div class="price">$245</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1517705008128-361805f42e86?q=80&w=1200">
+                <div class="info">
+                    <h3>Tidal Vessel</h3>
+                    <div class="price">$120</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?q=80&w=1200">
+                <div class="info">
+                    <h3>Chrono Silver</h3>
+                    <div class="price">$380</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1200">
+                <div class="info">
+                    <h3>Sonic Bloom</h3>
+                    <div class="price">$450</div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
