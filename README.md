@@ -106,3 +106,4 @@ Desenvolvido por **Vitor Fazano**
 ## 📄 Licença
 
 Este projeto é livre para uso e aprendizado.
+# The_Digital_Atelier-responsivo
